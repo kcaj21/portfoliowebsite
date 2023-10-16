@@ -26,10 +26,8 @@ const Navbar = () => {
 
   return (
     <nav className='fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-95 border border-t-[#33353F] border-l-transparent border-r-transparent border-b-[#33353F]'>
-        <div className='flex flex-wrap items-center justify-between mx-auto px-4 py-2'>
-        <Link href={'/'} className=' text-2xl md:text-5xl text-white font-semibold'
-        >LOGO
-        </Link>
+        <div className='flex items-center justify-center mx-auto px-4 py-2'>
+
         <div className='mobile-menu block md:hidden'>
 
         {
@@ -46,7 +44,7 @@ const Navbar = () => {
 
         </div>
             <div className='menu hidden md:block md:w-auto' id='navbar'>
-            <ul className='flex p-4 md:p-0 md:flex-row md:space-x-8'>
+            <ul className='flex p-4 md:p-0 md:flex-row md:space-x-32'>
             {
                 navLinks.map((link, index) => (
                     <li key={index}>
