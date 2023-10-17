@@ -76,9 +76,9 @@ const AboutSection = () => {
     }
 
   return (
-    <section className='text-white' id='about'>
+    <section className='text-white' id='/'>
         <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
-        <Image className='border border-solid border-blue-200' src='/images/profile.jpeg' width={500} height={500} />
+        <Image className='border-2 border-solid border-[#ADB7BE]' src='/images/profile.jpeg' width={500} height={500} />
         <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
             <h2 className= 'text-4xl font-bold text-white mb-4'>About Me</h2>
             <p className='text-base md:text-lg'>I am a full stack software developer, with a particular interest in backend engineering. I have experience with Java, Spring, Node.js, React, Python and Flask and I'm always looking to expand my toolset.</p>

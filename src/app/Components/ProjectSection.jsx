@@ -24,7 +24,7 @@ const projectsData = [
         image: 'images/moviematch-screenshot.png',
         tag: ['All', 'Group'],
         gitUrl: 'https://github.com/ewanlaing/moviematch_js_group_project.git',
-        previewUrl: ''
+        previewUrl: 'https://moviematch-deployment.vercel.app/'
     },
 
     {
