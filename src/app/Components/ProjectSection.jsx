@@ -51,7 +51,7 @@ const ProjectSection = () => {
 
   return (
     <section id='projects'>
-    <h2 className='text-center text-4xl font-Oswald text-white mt-4 mb-8 md:mb-12'>My Projects</h2>
+    <h2 className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12'>My Projects</h2>
     <p className='text-center text-[#ADB7BE] font-thin text-xl'>The server loading time may take up to 30 seconds when previewing. Thank you for your patience.</p>
       <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
         <ProjectTag 
