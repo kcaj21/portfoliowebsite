@@ -48,7 +48,7 @@ const EmailSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_vfin987', 'template_l3vo6bj', form.current, '5hXMubyrxJ5cE9qjO')
+    emailjs.sendForm('service_vfin987', 'template_bg8fb5t', form.current, '5hXMubyrxJ5cE9qjO')
       .then((result) => {
           console.log(result.text);
           setEmailSubmitted(true)
@@ -100,7 +100,6 @@ const EmailSection = () => {
             required 
             placeholder='Subject'/>
             </div>
-            </form>
             <div className='mb-6'>
                 <label
                     className='text-white block mb-2 text-sm font-medium'>Message
@@ -117,10 +116,11 @@ const EmailSection = () => {
                 value='send'
                 className='bg-gradient-to-br from-yellow-100 via-yellow-500 to-yellow-700 hover:text-yellow-900 hover:duration-200 text-[#121212]   font-medium py-2.5 px-5 rounded-lg w-full'>Send Message
                 </button>
+            </form>
                 {
                     emailSubmitted && (
                         <p className='text-yellow-500 text-sm mt-2'>
-                            Email sent successfully
+                            Email sent! I'll be in touch soon!
                         </p>
                     )
                 }
