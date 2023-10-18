@@ -1,5 +1,6 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
+import emailjs from '@emailjs/browser';
 import GithubIcon from '../../../public/github-icon.svg'
 import LinkedinIcon from '../../../public/linkedin-icon.svg'
 import Link from 'next/link'
@@ -9,37 +10,52 @@ const EmailSection = () => {
 
     const [emailSubmitted, setEmailSubmitted] = useState(false)
 
-    const handleSubmit = async (e) => {
+    // const handleSubmit = async (e) => {
 
-        e.preventdefault()
+    //     e.preventdefault()
 
-        const data = {
-            email: e.target.email.value,
-            subject: e.target.subject.value,
-            message: e.target.message.value,         
-        }
-        const JSONdata = JSON.stringify(data);
-        const endpoint = 'api/send'
+    //     const data = {
+    //         email: e.target.email.value,
+    //         subject: e.target.subject.value,
+    //         message: e.target.message.value,         
+    //     }
+    //     const JSONdata = JSON.stringify(data);
+    //     const endpoint = 'api/send'
 
-        const options = {
+    //     const options = {
             
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
+    //         method: 'POST',
+    //         headers: {
+    //             'Content-Type': 'application/json',
+    //         },
 
-            body: JSONdata,
-        }
+    //         body: JSONdata,
+    //     }
 
-        const response = await fetch(endpoint, options)
-        const resData = await response.json()
-        setEmailSubmitted(true)
+    //     const response = await fetch(endpoint, options)
+    //     const resData = await response.json()
+    //     setEmailSubmitted(true)
 
-        if (response.status === 200) {
-            console.log('Message sent')
-        }
+    //     if (response.status === 200) {
+    //         console.log('Message sent')
+    //     }
 
-    }
+    // }
+
+
+  const form = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_vfin987', 'template_l3vo6bj', form.current, '5hXMubyrxJ5cE9qjO')
+      .then((result) => {
+          console.log(result.text);
+          setEmailSubmitted(true)
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
   return (
 
@@ -59,14 +75,14 @@ const EmailSection = () => {
         </div>
         </div>
         <div>
-            <form className='flex flex-col' onSubmit={handleSubmit}>
+            <form ref={form} className='flex flex-col' onSubmit={handleSubmit}>
             <div className='mb-6'>
             <label 
             className='text-white block mb-2 text-sm font-medium'
-            htmlFor='email' >Your email
+            >Your email
             </label>
             <input className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5' 
-            name='email'
+            name='user_email'
             type='email' 
             id='email' 
             required 
@@ -75,19 +91,18 @@ const EmailSection = () => {
             <div className='mb-6'>
             <label 
             className='text-white block mb-2 text-sm font-medium'
-            htmlFor='subject' >Subject
+            >Subject
             </label>
             <input className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5' 
-            name='subject'
+            name='user_name'
             type='text' 
-            id='subject' 
+            id='user_name' 
             required 
             placeholder='Subject'/>
             </div>
             </form>
             <div className='mb-6'>
                 <label
-                    htmlFor='message'
                     className='text-white block mb-2 text-sm font-medium'>Message
                 </label>
                 <textarea 
@@ -99,6 +114,7 @@ const EmailSection = () => {
             </div>
             <button
                 type='submit'
+                value='send'
                 className='bg-gradient-to-br from-yellow-100 via-yellow-500 to-yellow-700 hover:text-yellow-900 hover:duration-200 text-[#121212]   font-medium py-2.5 px-5 rounded-lg w-full'>Send Message
                 </button>
                 {
