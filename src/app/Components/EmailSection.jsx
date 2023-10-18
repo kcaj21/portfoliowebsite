@@ -22,7 +22,7 @@ const EmailSection = () => {
         }, (error) => {
             console.log(error.text);
         });
-    };
+    }
 
     return (
 
