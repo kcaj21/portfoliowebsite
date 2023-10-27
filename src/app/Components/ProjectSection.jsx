@@ -18,7 +18,17 @@ const projectsData = [
     },
 
     {
-        id: 2,
+      id: 2,
+      title: 'Livegab',
+      description: 'Live solo project - real-time chat app. A public chatroom is available and the ability to directly message other users',
+      image: 'images/livegab-screenshot.jpg',
+      tag: ['All', 'Solo'],
+      gitUrl: 'https://github.com/kcaj21/livegab.git',
+      previewUrl: 'http://livegab-v0.1.s3-website-eu-west-1.amazonaws.com/'
+  },
+
+    {
+        id: 3,
         title: 'Moviematch',
         description: 'Group project - An IMDB-style movie database application where users can search for movies and add favourites',
         image: 'images/moviematch-screenshot.png',
@@ -28,7 +38,7 @@ const projectsData = [
     },
 
     {
-        id: 3,
+        id: 4,
         title: 'THE D4WG POUND',
         description: 'Solo project - My first ever project. Vet management app with basic CRUD functionality',
         image: '/images/D4WGPOUND-screenshot.jpg',
@@ -52,7 +62,7 @@ const ProjectSection = () => {
   return (
     <section id='projects'>
     <h2 className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12'>My Projects</h2>
-    <p className='text-center text-[#ADB7BE] font-thin text-xl'>The server loading time may take up to 30 seconds when previewing. Thank you for your patience.</p>
+    <p className='text-center text-[#ADB7BE] font-thin text-xl'>The group projects rely on free-tier servers, so loading time may take up to 30 seconds when previewing. Thank you for your patience.</p>
       <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
         <ProjectTag 
         onClick={handleTagChange} 
