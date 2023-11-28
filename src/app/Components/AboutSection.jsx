@@ -21,7 +21,6 @@ const AboutSection = () => {
                     <li>PostgreSQL</li>
                     <li>MongoDB</li>
                     <li>Express</li>
-                    <li>Git</li>
                 </ul>
             )
         },
@@ -46,8 +45,23 @@ const AboutSection = () => {
             content: (
                 <ul>
                     <li>JUnit</li>
+                    <li>Python unittest</li>
+                    <li>React Testing Library</li>
                     <li>Cypress</li>
                     <li>Insomnia</li>
+                </ul>
+            )
+        },
+
+        {
+            title: "devops",
+            id: "devops",
+            content: (
+                <ul>
+                    <li>AWS</li>
+                    <li>Docker</li>
+                    <li>Git</li>
+                    <li>Github Actions</li>
                 </ul>
             )
         },
@@ -89,6 +103,8 @@ const AboutSection = () => {
             <TabButton selectTab={() => handeTabChange("frontend")} active={tab === "frontend"}>Front End
             </TabButton>
             <TabButton selectTab={() => handeTabChange("testing")} active={tab === "testing"}>Testing
+            </TabButton>
+            <TabButton selectTab={() => handeTabChange("devops")} active={tab === "devops"}>Devops
             </TabButton>
             <TabButton selectTab={() => handeTabChange("education")} active={tab === "education"}>Education
             </TabButton>
