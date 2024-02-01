@@ -44,7 +44,7 @@ const projectsData = [
         image: '/images/D4WGPOUND-screenshot.jpg',
         tag: ['All', 'Solo'],
         gitUrl: 'https://github.com/kcaj21/THE_D4WG_POUND.git',
-        previewUrl: 'https://the-d4wg-pound-8c9a882e2a1b.herokuapp.com/'
+        previewUrl: 'https://github.com/kcaj21/THE_D4WG_POUND.git'
     }
 ]
 
