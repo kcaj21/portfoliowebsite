@@ -96,7 +96,7 @@ const AboutSection = () => {
         <Image className='border-2 border-solid border-[#ADB7BE]' src='/images/profile.jpeg' quality={25}  width={500} height={500} alt='profilepic' priority />
         <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
             <h2 className= 'text-4xl font-bold text-white mb-4'>About Me</h2>
-            <p className='text-base text-[#ADB7BE] md:text-lg'>I am a full stack software developer educated at Codeclan, with a background in clinical data management. I'm currently looking for my first junior developer role and also any interesting projects I can collaborate on.</p>
+            <p className='text-base text-[#ADB7BE] md:text-lg'>I am a full stack software developer educated at Codeclan, with 5 years of experience in clinical data management. I'm always on the look out for interesting projects I can collaborate on, so feel free to reach out.</p>
             <div className='flex flex-row justify-start mt-8'>
             <TabButton selectTab={() => handeTabChange("backend")} active={tab === "backend"}>Back End
             </TabButton>

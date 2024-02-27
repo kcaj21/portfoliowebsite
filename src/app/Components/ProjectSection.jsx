@@ -35,16 +35,6 @@ const projectsData = [
         tag: ['All', 'Group'],
         gitUrl: 'https://github.com/ewanlaing/moviematch_js_group_project.git',
         previewUrl: 'https://moviematch-js-group-project-df5g-mu51rll5p-ewanlaings-projects.vercel.app/'
-    },
-
-    {
-        id: 4,
-        title: 'THE D4WG POUND',
-        description: 'Solo project - My first ever project. Vet management app with basic CRUD functionality',
-        image: '/images/D4WGPOUND-screenshot.jpg',
-        tag: ['All', 'Solo'],
-        gitUrl: 'https://github.com/kcaj21/THE_D4WG_POUND.git',
-        previewUrl: 'https://github.com/kcaj21/THE_D4WG_POUND.git'
     }
 ]
 
