@@ -12,12 +12,12 @@ const AboutSection = () => {
             id: "backend",
             content: (
                 <ul>
+                    <li>Python</li>
+                    <li>FastAPI</li>
                     <li>Java</li>
                     <li>Spring</li>
                     <li>Node.js</li>
                     <li>Socket.io</li>
-                    <li>Python</li>
-                    <li>Flask</li>
                     <li>PostgreSQL</li>
                     <li>MongoDB</li>
                     <li>Express</li>
@@ -44,8 +44,8 @@ const AboutSection = () => {
             id: "testing",
             content: (
                 <ul>
+                    <li>Pytest</li>
                     <li>JUnit</li>
-                    <li>Python unittest</li>
                     <li>React Testing Library</li>
                     <li>Cypress</li>
                     <li>Insomnia</li>
