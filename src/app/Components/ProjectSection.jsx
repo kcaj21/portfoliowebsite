@@ -7,8 +7,18 @@ import Link from 'next/link'
 
 const projectsData = [
 
+  {
+    id: 1,
+    title: 'Viro3D',
+    description: 'Professional project - A comprehensive, searchable and browsable database of viral protein structure predictions, containing over 85,000 structural models from more than 4,400 human and animal viruses.',
+    image: 'images/viro3d-screenshot.png',
+    tag: ['All', 'Solo'],
+    gitUrl: 'https://github.com/centre-for-virus-research/viro3d-backend',
+    previewUrl: 'https://viro3d.cvr.gla.ac.uk/'
+},
+
     {
-        id: 1,
+        id: 2,
         title: 'Sketchwars',
         description: 'Group project - A real-time online Multiplayer Game which is an homage to SketchParty',
         image: 'images/sketchwars-screenshot.jpeg',
@@ -18,7 +28,7 @@ const projectsData = [
     },
 
     {
-      id: 2,
+      id: 3,
       title: 'Livegab',
       description: 'Live solo project - real-time chat app. A public chatroom is available and the ability to directly message other users',
       image: 'images/livegab-screenshot.jpg',
@@ -28,7 +38,7 @@ const projectsData = [
   },
 
     {
-        id: 3,
+        id: 4,
         title: 'Moviematch',
         description: 'Group project - An IMDB-style movie database application where users can search for movies and add favourites',
         image: 'images/moviematch-screenshot.png',
