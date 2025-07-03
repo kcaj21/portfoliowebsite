@@ -41,7 +41,7 @@ const projectsData = [
         id: 4,
         title: 'Moviematch',
         description: 'Group project - An IMDB-style movie database application where users can search for movies and add favourites',
-        image: 'images/moviematch-screenshot.png',
+        image: 'images/moviematch-screenshot.jpg',
         tag: ['All', 'Group'],
         gitUrl: 'https://github.com/ewanlaing/moviematch_js_group_project.git',
         previewUrl: 'https://moviematch-js-group-project-df5g-mu51rll5p-ewanlaings-projects.vercel.app/'
